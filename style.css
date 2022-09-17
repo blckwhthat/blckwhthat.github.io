@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+html {
+    scroll-behavior: smooth !important;
+    }
+body {
+    background-color: lightgray;
+}
+
+/* Title divider */
+#divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* To show the lines on right 
+  and left sides of the text */
+  #divider::after,
+  #divider::before {
+    content: "";
+    border: 1px solid #332D2D;
+    flex: 1;
+  }
+  
+  /* Space on left and right sides of text */
+  #divider:not(:empty)::before {
+    margin-right: 0.25em;
+  }
+  
+  #divider:not(:empty)::after {
+    margin-left: 0.25em;
+  }
+
+/* Header Starts Here */
+header {
+    margin-top: 0;
+    z-index: 50;
+}
+
+
+.nav-link {
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+/* Hero Starts here */
+.hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.hero .container  {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 140px;
+    
+}
+
+.hero img {
+    width: 300px;
+    height: 500px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+
+/* About starts herer */
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.about .container  {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px; 
+}
+.about_info h6{
+    font-weight: bold;
+}
+.about_info span{
+    font-weight: 100;
+}
+
+.mainImage img{
+    height: 450px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Education Starts here */
+.education {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.education .container {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;          
+}
+.border_dot {
+    font-size: 25px;
+    top: 10px;
+    margin-left: -12px;
+    
+    z-index: 1;
+}
+.border_line {
+    border-left: 1px solid ;
+    margin-left: 20px;
+}
+
+
+/* Skills starts here */
+.skills {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.skills .container  {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;  
+}
+.skills .card {
+    background-color: lightgray;
+    border: none;
+}
+
+/* Services starts here */
+.services {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.services .container  {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;  
+}
+.services .card {
+    text-align: justify;
+    background-color: lightgray;
+    border: none;
+}
+.services .icon i {
+    font-size: 60px;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+
+/* Portfolio starts here */
+.portfolio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.portfolio .container  {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;  
+}
+.portfolio .card {
+    background-color:lightgray;
+    text-align: justify;
+}
+.portfolio img {
+    height: 280px;
+}
+.portfolio_wrapper{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.portfolio_wrapper a{
+    text-decoration: none;
+}
+.portfolio_wrapper .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+} 
+.portfolio_wrapper .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: larger;
+    opacity: 0;
+    transition: 0.5s;
+}
+.portfolio_wrapper:hover .middle {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.portfolio_wrapper:hover .text {
+    opacity: 1;
+}
+
+/* Contact start here */
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact .container {
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;          
+}
+.contact .card {
+    background-color: lightgray;
+    border: none;
+}
+
+.contact input {
+    background-color: lightgray;
+    border: 1px solid #332d2d;
+}
+.contact input:focus {
+    background-color: lightgray;
+    border: 1px solid #332d2d;
+}
+.contact textarea {
+    background-color: lightgray;
+    border: 1px solid #332d2d;
+}
+.contact textarea:focus {
+    background-color: lightgray;
+    border: 1px solid #332d2d;
+}
+
+/* Footer Starts Here */
+
+footer {
+    background-color: #332D2D;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;          
+}
+footer .footer_icons {
+    text-align: center;
+}
+footer .footer_icons i{
+    /* background-color: white; */
+    padding: 0 20px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+footer .footer_button {
+    background-color: #332D2D; 
+    border: 1px solid white;
+    color: white;
+    padding: 2px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: .5s;
+}
+footer .footer_button:hover {
+    transform: scale(1.2);
+}
+
+/* Media Query
+@media screen and (max-width: 360px) {
+    .services {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .services .container  {
+        background-color: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 220px;  
+    }
+}
+@media screen and (max-width: 540px) {
+    .services {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .services .container  {
+        background-color: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 220px;  
+    }
+}
+@media screen and (max-width: 720px) {
+    .services {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .services .container  {
+        background-color: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 220px;  
+    }
+} */
